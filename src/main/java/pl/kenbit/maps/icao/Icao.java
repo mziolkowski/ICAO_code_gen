@@ -65,7 +65,7 @@ public class Icao extends javax.swing.JFrame {
         });
         
         lblNewLabel.setText("");
-        Image img= new ImageIcon(this.getClass().getResource("/icao_2.png")).getImage();
+        Image img= new ImageIcon(this.getClass().getResource("icao.png")).getImage();
         Image newImg = img.getScaledInstance(100, 80, java.awt.Image.SCALE_SMOOTH);
         lblNewLabel.setIcon(new ImageIcon(newImg));
         
