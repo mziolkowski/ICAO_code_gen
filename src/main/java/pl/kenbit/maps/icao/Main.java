@@ -40,7 +40,7 @@ public class Main {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
             	Icao icao = new Icao();
-            	icao.setSize(645, 132);
+            	icao.setSize(645, 230);
                 icao.setVisible(true);
             }
         });
