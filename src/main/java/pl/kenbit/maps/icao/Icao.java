@@ -129,25 +129,15 @@ public class Icao extends javax.swing.JFrame {
     // End of variables declaration        
     
 public void swapInRunTime() {
+    Algorithm algorithm = new Algorithm();
             String generateCode = "";
             textPane.setText("");
             String word = jTextField1.getText();
             data = new Data();
             char[] swapStringToArary = word.toCharArray();
-            char[] letters = data.letter();
-            String[] alphabetICAO = data.alphabetICAO();
             String[] finalWord = new String[word.length()];
 
-            for (int i = 0; i <= swapStringToArary.length - 1; i++) {
-                for (int j = 0; j <= letters.length - 1; j++) {
-                    if (swapStringToArary[i] == letters[j]) {
-                        finalWord[i] = alphabetICAO[j];
-                        break;
-                    } else {
-
-                    }
-                }
-            }
+            algorithm.calculation(finalWord, swapStringToArary, word);
 
             for (int k = 0; k <= finalWord.length - 1; k++) {
                 generateCode = generateCode + " - " + finalWord[k];
